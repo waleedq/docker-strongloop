@@ -9,6 +9,3 @@ FROM node:7
 ADD . /app
 WORKDIR /app
 RUN npm install -g strongloop
-RUN npm install
-ENV NODE_ENV production
-CMD [ "slc", "run", "." ]
